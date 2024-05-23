@@ -10,12 +10,12 @@ public class SpatialAPILoadTestSimulation extends Simulation {
 
     // http configuration
     private final HttpProtocolBuilder httpProtocol = http
-            .baseUrl("http://54.226.34.214:8081")
+            .baseUrl("http://44.222.229.163:8081")
             .acceptHeader("application/json");
 
 
     // Runtime parameters
-    private static final int USER_COUNT = Integer.parseInt(System.getProperty("USERS", "5"));
+    private static final int USER_COUNT = Integer.parseInt(System.getProperty("USERS", "10"));
     private static final int RAMP_DURATION = Integer.parseInt(System.getProperty("RAMP_DURATION", "10"));
 
     // data feeder of user
